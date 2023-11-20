@@ -1,0 +1,811 @@
+@import "../styles.scss";
+
+.home_container {
+  /* ---------- Navbar ---------- */
+  .navbar {
+    width: 100vw;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FDF8F4;
+    border: transparent;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.5s ease;
+    z-index: 100;
+    &.scroll {
+      box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.25);
+    }
+    img {
+      position: absolute;
+      top: 16px;
+      left: 25px;
+      /* ========= RWD For 414*896 ========= */
+      @media screen and (max-width: 414px){
+        top: 46px;
+        left: 25px;
+      }
+    }
+    /* ========= RWD For 414*896 ========= */
+    @media screen and (max-width: 414px){
+      height: 90px;
+      padding-top: 2rem;
+    }
+  }
+
+  /* ---------- Main_containter ---------- */
+  .main_containter{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* ----- Title_containter ----- */
+    .title_containter{
+      margin-top: 1rem;
+      width: 100%;
+      padding-top: 2rem;
+      h1 {
+        width: 45%;
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+        /* ========= RWD For 1920*1080 ========= */
+        @media screen and (max-width: 1920px){
+          width: 40%;
+          font-size: 3.2rem;
+          line-height: 4.2rem;
+         }
+         /* ========= RWD For 1440*900 ========= */
+         @media screen and (max-width: 1440px) {
+          font-size: 2.8rem;
+          line-height: 3.8rem;
+         }
+         /* ========= RWD For 1024*768 ========= */
+         @media screen and (max-width: 1024px) {
+            width: 80%;
+            font-size: 2rem;
+            margin-top: 0.25rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 68%;
+            font-size: 1.15rem;
+            line-height: 1.5rem;
+            margin-top: 0.2rem;
+          }
+      }
+      h3 {
+        color: $grey-color;
+        font-weight: 400;
+        font-size: 1.4rem;
+        padding: 1.1rem 0rem;
+        /* ========= RWD For 1920*1080 ========= */
+        @media screen and (max-width: 1920px){
+          font-size: 1.25rem;
+          padding: 1rem 0rem;
+         }
+        /* ========= RWD For 1440*900 ========= */
+        @media screen and (max-width: 1440px) {
+          font-size: 1.1rem;
+        }
+        /* ========= RWD For 1024*768 ========= */
+        @media screen and (max-width: 1024px){
+          font-size: 1.05rem;
+          padding: 0.3rem 0rem 0.5rem 0;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media screen and (max-width: 414px) {
+          font-size: 0.5rem;
+          padding: 0.6rem 0rem 0.6rem 0;
+        }
+      }
+      .drawone_containter {
+        padding: 1.1rem 0;
+        display: flex;
+        max-width: 400px;
+        /* ========= RWD For 1920*1080 ========= */
+        @media screen and (max-width: 1920px){
+          max-width: 340px;
+          padding: 0.6rem 0;
+         }
+        /* ========= RWD For 1024*768 ========= */
+        @media screen and (max-width: 1024px){
+          max-width: 320px;
+          padding: 0.5rem 0;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media screen and (max-width: 414px){
+          width: 200px;
+          padding: 0.3rem 0;
+        }
+        span {
+          width: 6px;
+          background-color:$grey-color;
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 3px;
+          }
+        }
+        p {
+          font-size: 1.4rem;
+          /* ========= RWD For 1920*1080 ========= */
+          @media screen and (max-width: 1920px){
+            font-size: 1.25rem;
+          }
+          /* ========= RWD For 1440*900 ========= */
+          @media screen and (max-width: 1440px) {
+           font-size: 1.15rem;
+          }
+          /* ========= RWD For 1024*768 ========= */
+          @media screen and (max-width: 1024px){
+            font-size: 1.1rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            font-size: 0.75rem;
+          }
+        }
+        .btn_drawOne {
+          font-size: 1.05rem;
+          text-decoration: none;
+          border: none;
+          background-color: $black-color;
+          width: 75px;
+          border-radius: 1rem;
+          /* ========= RWD For 1920*1080 ========= */
+          @media screen and (max-width: 1920px){
+            font-size: 0.9rem;
+            width: 66px;
+          }
+          /* ========= RWD For 1024*768 ========= */
+          @media screen and (max-width: 1024px){
+            font-size: 0.8rem;
+            width: 65px;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 36px;
+            font-size: 0.5rem;
+          }
+          a {
+            color: $black-color;
+            text-decoration: none;
+            display: block;
+            color: #fff;
+           /* ========= RWD For 1920*1080 ========= */
+           @media screen and (max-width: 1920px){
+              margin-bottom: 0.1rem;
+            }
+            /* ========= RWD For 414*896 ========= */
+            @media screen and (max-width: 414px){
+              margin-bottom: 0.05rem;
+            }
+          }
+        }
+      }
+    }
+
+    /* ----- Links_containter ----- */
+    .links_containter {
+      width: 100%;
+      margin-top: 2rem;
+
+      /* ----- Three_containter ----- */
+      .three_containter{
+        display: flex;
+        justify-content: space-between;
+        width: 61vw;
+        /* ========= RWD For 1920*1080 ========= */
+        @media screen and (max-width: 1920px){
+          width: 62vw;
+        }
+        /* ========= RWD For 1440*900 ========= */
+        @media screen and (max-width: 1440px){
+          width: 70vw;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media screen and (max-width: 414px){
+          flex-direction: column;
+        }
+        /* ----- Draw BMS ----- */
+        .btn_drawBMS {
+          width: 32%;
+          text-decoration: none;
+          border: none;
+          background-color: $bg-purple-color;
+          border-radius: 0.8rem;
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 90%;
+            margin-bottom: 0.6rem;
+          }
+          a {
+            color: $black-color;
+            text-decoration: none;
+            height: 380px;
+            display: block;
+            position: relative;
+            /* ========= RWD For 1920*1080 ========= */
+            @media screen and (max-width: 1920px){
+              height: 340px;
+            }
+            /* ========= RWD For 1024*768 ========= */
+            @media screen and (max-width: 1024px){
+              height: 280px;
+            }
+            /* ========= RWD For 414*896 ========= */
+            @media screen and (max-width: 414px){
+              height: 130px;
+            }
+            .drawbmscard{
+              padding-top: 2.8rem;
+              padding-left: 2rem;
+              text-align: left;
+              /* ========= RWD For 1024*768 ========= */
+              @media screen and (max-width: 1024px){
+                padding-top: 1.5rem;
+                padding-left: 2rem;
+              }
+              /* ========= RWD For 414*896 ========= */
+              @media screen and (max-width: 414px){
+                padding-top: 1rem;
+                padding-left: 1.2rem;
+              }
+              h3 {
+                color: $purple-color;
+                letter-spacing:0.2rem;
+                font-size: 1.35rem;
+                font-weight: 800;
+                margin-bottom: 0.15rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 1.2rem;
+                  margin-bottom: 0.1rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.8rem;
+                  letter-spacing: 0.1rem;
+                  margin-bottom: 0.05rem;
+                }
+              }
+              .txt_name {
+                color: #A092CE;
+                font-size: 1rem;
+                margin-bottom: 0.25rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.75rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.55rem;
+                  margin-bottom: 0.1rem;
+                }
+              }
+              .txt_card {
+                color: rgb(131, 131, 131);
+                font-size: 1rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.85rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.58rem;
+                }
+              }
+              img {
+                width: 65%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                /* ========= RWD For 1920*1080 ========= */
+                @media screen and (max-width: 1920px){
+                  width: 55%;
+                 }
+                 /* ========= RWD For 1440*900 ========= */
+                 @media screen and (max-width: 1440px){
+                  width: 60%;
+                }
+                 /* ========= RWD For 1024*768 ========= */
+                 @media screen and (max-width: 1024px){
+                  width: 68%;
+                 }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                   width: 36%;
+                 }
+              }
+            }
+          }
+        }
+        /* ----- Draw Time ----- */
+        .btn_drawTime {
+          width: 32%;
+          text-decoration: none;
+          border: none;
+          background-color: $bg-red-color;
+          border-radius: 0.8rem;
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 90%;
+            margin-bottom: 0.6rem;
+          }
+          a {
+            color: $black-color;
+            text-decoration: none;
+            display: block;
+            height: 380px;
+            position: relative;
+            /* ========= RWD For 1920*1080 ========= */
+            @media screen and (max-width: 1920px){
+              height: 340px;
+            }
+            /* ========= RWD For 1024*768 ========= */
+            @media screen and (max-width: 1024px){
+              height: 280px;
+            }
+            /* ========= RWD For 414*896 ========= */
+            @media screen and (max-width: 414px){
+              height: 130px;
+            }
+            .drawtimecard {
+              padding-top: 2.8rem;
+              padding-left: 2rem;
+              text-align: left;
+              /* ========= RWD For 1024*768 ========= */
+              @media screen and (max-width: 1024px){
+                padding-top: 1.5rem;
+                padding-left: 2rem;
+              }
+              /* ========= RWD For 414*896 ========= */
+              @media screen and (max-width: 414px){
+                padding-top: 1rem;
+                padding-left: 1.2rem;
+              }
+              h3 {
+                color: $purple-color;
+                letter-spacing:0.2rem;
+                font-size: 1.35rem;
+                font-weight: 800;
+                margin-bottom: 0.15rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 1.2rem;
+                  margin-bottom: 0.1rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.8rem;
+                  letter-spacing: 0.1rem;
+                  margin-bottom: 0.05rem;
+                }
+              }
+              .txt_name {
+                color: rgb(209, 152, 142);
+                font-size: 1rem;
+                margin-bottom: 0.25rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.75rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.55rem;
+                  margin-bottom: 0.1rem;
+                }
+              }
+              .txt_card {
+                color: rgb(131, 131, 131);
+                font-size: 1rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.85rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.58rem;
+                }
+              }
+              img {
+                width: 62%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 38px;
+                z-index: 1;
+                /* ========= RWD For 1920*1080 ========= */
+                @media screen and (max-width: 1920px){
+                  width: 52%;
+                 }
+                 /* ========= RWD For 1440*900 ========= */
+                 @media screen and (max-width: 1440px){
+                  width: 58%;
+                }
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  width: 66%;
+                 }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  width: 38%;
+                  left: 125px;
+                  right: 0px;
+                  bottom: 10px;
+                }
+              }
+            }
+          }
+        }
+        /* ----- Draw Five ----- */
+        .btn_drawFive {
+          width: 32%;
+          text-decoration: none;
+          border: none;
+          background-color: $bg-yellow-color;
+          border-radius: 0.8rem;
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 90%;
+          }
+          a {
+            color: $black-color;
+            text-decoration: none;
+            display: block;
+            height: 380px;
+            position: relative;
+            /* ========= RWD For 1920*1080 ========= */
+            @media screen and (max-width: 1920px){
+              height: 340px;
+            }
+            /* ========= RWD For 1024*768 ========= */
+            @media screen and (max-width: 1024px){
+              height: 280px;
+            }
+            /* ========= RWD For 414*896 ========= */
+            @media screen and (max-width: 414px){
+              height: 130px;
+            }
+            .drawnospreadcard {
+              padding-top: 2.8rem;
+              padding-left: 2rem;
+              text-align: left;
+              /* ========= RWD For 1024*768 ========= */
+              @media screen and (max-width: 1024px){
+                padding-top: 1.5rem;
+                padding-left: 2rem;
+              }
+              /* ========= RWD For 414*896 ========= */
+              @media screen and (max-width: 414px){
+                padding-top: 1rem;
+                padding-left: 1.2rem;
+              }
+              h3 {
+                color: $purple-color;
+                letter-spacing:0.2rem;
+                font-size: 1.35rem;
+                font-weight: 800;
+                margin-bottom: 0.15rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 1.2rem;
+                  margin-bottom: 0.15rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.8rem;
+                  letter-spacing: 0.1rem;
+                  margin-bottom: 0.05rem;
+                }
+              }
+              .txt_name {
+                color: rgb(194, 177, 130);
+                font-size: 1rem;
+                margin-bottom: 0.25rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.75rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.55rem;
+                  margin-bottom: 0.1rem;
+                }
+              }
+              .txt_card {
+                color: rgb(131, 131, 131);
+                font-size: 1rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.85rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.58rem;
+                }
+              }
+              img {
+                width: 55%;
+                position: absolute;
+                right: 40px;
+                bottom: 0;
+                z-index: 1;
+                /* ========= RWD For 1920*1080 ========= */
+                @media screen and (max-width: 1920px){
+                  width: 48%;
+                 }
+                 /* ========= RWD For 1440*900 ========= */
+                 @media screen and (max-width: 1440px){
+                  width: 55%;
+                }
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  width: 60%;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  width: 33%;
+                  right: 20px;
+                  bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      /* ----- Second_containter ----- */
+      .second_containter {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-bottom: 3.2rem;
+        width: 61vw;
+        /* ========= RWD For 1920*1080 ========= */
+        @media screen and (max-width: 1920px){
+          width: 62vw;
+        }
+        /* ========= RWD For 1440*900 ========= */
+        @media screen and (max-width: 1440px){
+          width: 70vw;
+        }
+        /* ========= RWD For 1024*768 ========= */
+        @media screen and (max-width: 1024px){
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 1.7rem;
+          margin-bottom: 1.5rem;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media screen and (max-width: 414px){
+          margin-top: 0.5rem;
+        }
+
+        /* ----- BTN Notice ----- */
+        .btn_notice{
+          text-decoration: none;
+          border: none;
+          background-color:#ECE2DA;
+          border-radius: 0.8rem;
+          width: 32%;
+          /* ========= RWD For 1024*768 ========= */
+          @media screen and (max-width: 1024px){
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 0.7rem;
+            border-radius: 0.3rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 90%;
+            margin: 0.2rem 0;
+          }
+          a {
+            text-decoration: none;
+            color: $black-color;
+            font-weight: 600;
+            height: 85px;
+            display: flex;
+            /* ========= RWD For 1920*1080 ========= */
+            @media screen and (max-width: 1920px){
+              height: 75px;
+            }
+            /* ========= RWD For 1024*768 ========= */
+            @media screen and (max-width: 1024px){
+              height: 40px;
+              
+            }
+            /* ========= RWD For 414*896 ========= */
+            @media screen and (max-width: 414px){
+              height: 38px;
+            }
+            .btn_notice_box {
+              display: flex;
+              img {
+                width: 22px;
+                margin-right: 1rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  width: 15px;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  width: 12px;
+                }
+              }
+              p {
+                font-size: 1.1rem;
+                margin: auto;
+                /* ========= RWD For 1920*1080 ========= */
+                @media screen and (max-width: 1920px){
+                  font-size: 1.05rem;
+                  padding-bottom: 1px;
+                }
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.9rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.6rem;
+                }
+              }
+            }
+          }
+        }
+
+        /* ----- BTN About Me ----- */
+        .btn_aboutMe{
+          text-decoration: none;
+          border: none;
+          background-color:#ECE2DA;
+          border-radius: 0.8rem;
+          width: 32%;
+          /* ========= RWD For 1024*768 ========= */
+          @media screen and (max-width: 1024px){
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 0.7rem;
+            border-radius: 0.3rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 90%;
+            margin: 0.2rem 0;
+          }
+          a {
+            text-decoration: none;
+            color: $black-color;
+            font-weight: 600;
+            font-size: 1.35rem;
+            height: 85px;
+            display: flex;
+            /* ========= RWD For 1920*1080 ========= */
+            @media screen and (max-width: 1920px){
+              height: 75px;
+            }
+            /* ========= RWD For 1024*768 ========= */
+            @media screen and (max-width: 1024px){
+              height: 40px;
+            }
+            /* ========= RWD For 414*896 ========= */
+            @media screen and (max-width: 414px){
+              height: 38px;
+            }
+            .btn_aboutMe_box {
+              display: flex;
+              align-content: center;
+              img {
+                width: 22px;
+                margin-right: 1rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  width: 15px;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  width: 12px;
+                }
+              }
+              p {
+                font-size: 1.1rem;
+                margin: auto;
+                /* ========= RWD For 1920*1080 ========= */
+                @media screen and (max-width: 1920px){
+                  padding-bottom: 1px;
+                  font-size: 1.05rem;
+                }
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.9rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.6rem;
+                }
+              }
+            }
+          }
+        }
+
+        /* ----- BTN Disclaimer ----- */
+        .btn_disclaimer{
+          text-decoration: none;
+          border: none;
+          background-color:#ECE2DA;
+          border-radius: 0.8rem;
+          width: 32%;
+          //* ========= RWD For 1024*768 ========= */
+          @media screen and (max-width: 1024px){
+            margin-right: 0;
+            width: 100%;
+            border-radius: 0.3rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media screen and (max-width: 414px){
+            width: 90%;
+            margin: 0.2rem 0;
+          }
+          a {
+            text-decoration: none;
+            color: $black-color;
+            font-weight: 600;
+            font-size: 1.35rem;
+            height: 85px;
+            display: flex;
+            /* ========= RWD For 1920*1080 ========= */
+            @media screen and (max-width: 1920px){
+              height: 75px;
+            }
+            /* ========= RWD For 1024*768 ========= */
+            @media screen and (max-width: 1024px){
+              height: 40px;
+            }
+            /* ========= RWD For 414*896 ========= */
+            @media screen and (max-width: 414px){
+              height: 38px;
+            }
+            .btn_disclaimer_box {
+              display: flex;
+              align-content: center;
+              img {
+                width: 22px;
+                margin-right: 1rem;
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  width: 15px;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  width: 12px;
+                }
+              }
+              p {
+                font-size: 1.1rem;
+                margin: auto;
+                /* ========= RWD For 1920*1080 ========= */
+                @media screen and (max-width: 1920px){
+                  font-size: 1.05rem;
+                  padding-bottom: 1px;
+                }
+                /* ========= RWD For 1024*768 ========= */
+                @media screen and (max-width: 1024px){
+                  font-size: 0.9rem;
+                }
+                /* ========= RWD For 414*896 ========= */
+                @media screen and (max-width: 414px){
+                  font-size: 0.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+}
+

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700;800&display=swap');
+
+
+$black-color: #272727;
+$grey-color: #ADADAD;
+$purple-color: #260471;
+
+$bg-purple-color: #E2E6FF;
+$bg-red-color: #FFE6E2;
+$bg-yellow-color: #FEEFDC;
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+  height: 100%;
+  background-color: #FDF8F4;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  background-color: #FDF8F4;
+}

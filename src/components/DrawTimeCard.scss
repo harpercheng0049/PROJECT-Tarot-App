@@ -1,0 +1,619 @@
+@import "../styles.scss";
+
+
+.drawTimeCard_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* ---------- Navbar Container ---------- */
+  
+  .navbar_container{
+    width: 100vw;
+    height: 68px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FDF8F4;
+    border: transparent;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.5s ease;
+    z-index: 100;
+
+    &.scroll {
+      box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.25);
+    }
+    img {
+      position: absolute;
+      top: 16px;
+      left: 25px;
+      /* ========= RWD For 414*896 ========= */
+      @media (max-width: 414px) {
+        top: 46px;
+        left: 25px;
+      }
+    }
+    /* ========= RWD For 414*896 ========= */
+    @media (max-width: 414px) {
+      height: 90px;
+      padding-top: 2rem;
+    }
+  }
+
+  /* ---------- Title Container ---------- */
+  .title_container{
+    width: 100%;
+    margin: 6rem 0 1.2rem 0;
+    /* ========= RWD For 414*896 ========= */
+    @media (max-width: 414px) {
+      margin: 7rem 0 0.25rem 0;
+    }
+    h1{
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      margin-bottom: 0.25rem;
+      /* ========= RWD For 1440*900 ========= */
+      @media (max-width: 1440px) {
+        font-size: 1.7rem;
+      }
+      /* ========= RWD For 1024*768 ========= */
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
+      /* ========= RWD For 414*896 ========= */
+      @media (max-width: 414px) {
+        font-size: 1.15rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+    h4{
+      color: $grey-color;
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+      font-weight: 400;
+      /* ========= RWD For 1440*900 ========= */
+      @media (max-width: 1440px) {
+        font-size: 0.9rem;
+      }
+      /* ========= RWD For 1024*768 ========= */
+      @media (max-width: 1024px) {
+        font-size: 0.8rem;
+        letter-spacing: 0.15rem;
+      }
+      /* ========= RWD For 414*896 ========= */
+      @media (max-width: 414px) {
+        font-size: 0.65rem;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  /* ---------- Info Container ---------- */
+  .info_container{
+    display: flex;
+    width: 58vw;
+    margin-top: 1.8rem;
+    max-height: 200px;
+    /* ========= RWD For 1440*900 ========= */
+    @media (max-width: 1440px) {
+      width: 70vw;
+     }
+     /* ========= RWD For 1024*768 ========= */
+    @media (max-width: 1024px) {
+      width: 80vw;
+     }
+    /* ========= RWD For 414*896 ========= */
+    @media (max-width: 414px) {
+      flex-direction: column;
+      width: 80vw;
+      margin-top: 0.8rem;
+    }
+    /* -- STEPS AREA -- */
+    .steps_area{
+      width: 48%;
+      background-color: $bg-purple-color;
+      box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.15);
+      /* ========= RWD For 414*896 ========= */
+      @media (max-width: 414px) {
+        width: 100%;
+        margin-bottom: 0.8rem;
+      }
+      
+      h4{
+        font-size: 1.05rem;
+        letter-spacing: 0.25rem;
+        color: #fff;
+        background-color: #9EA9F0;
+        padding: 0.7rem 0;
+        /* ========= RWD For 1440*900 ========= */
+        @media (max-width: 1440px) {
+          font-size: 0.95rem;
+          padding: 0.7rem 0;
+        }
+        /* ========= RWD For 1024*768 ========= */
+        @media (max-width: 1024px) {
+          font-size: 0.9rem;
+          padding: 0.6rem 0;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media (max-width: 414px) {
+          font-size: 0.75rem;
+          padding: 0.3rem 0;
+        }
+      }
+      .steps_box {
+        width: 55%;
+        text-align: left;
+        margin: 1.5rem auto;
+        /* ========= RWD For 1440*900 ========= */
+        @media (max-width: 1440px) {
+          width: 66%;
+        }
+        /* ========= RWD For 1024*768 ========= */
+        @media (max-width: 1024px) {
+          width: 75%;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media (max-width: 414px) {
+          width: 76%;
+          margin: 0.5rem auto;
+        }
+        h3 {
+          display: inline-block;
+          color: $purple-color;
+          font-size: 0.85rem;
+          padding: 0.5rem;
+          /* ========= RWD For 1440*900 ========= */
+          @media (max-width: 1440px) {
+            font-size: 0.9rem;
+          }
+          /* ========= RWD For 1024*768 ========= */
+          @media (max-width: 1024px) {
+            font-size: 0.8rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media (max-width: 414px) {
+            font-size: 0.6rem;
+            padding: 0.3rem;
+          }
+        }
+        p{
+          display: inline-block;
+          font-size: 0.85rem;
+          margin-left: 0.5rem;
+          /* ========= RWD For 1440*900 ========= */
+          @media (max-width: 1440px) {
+            font-size: 0.9rem;
+          }
+          /* ========= RWD For 1024*768 ========= */
+          @media (max-width: 1024px) {
+            font-size: 0.8rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media (max-width: 414px) {
+            font-size: 0.7rem;
+           }
+        }
+      }
+    }
+
+    /* -- EXAMPLE AREA -- */
+    .example_area{
+      width: 48%;
+      background-color: $bg-purple-color;
+      box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.15);
+      /* ========= RWD For 414*896 ========= */
+      @media (max-width: 414px) {
+        width: 100%;
+      }
+      .title_area{
+        h4{
+          font-size: 1.05rem;
+          letter-spacing: 0.25rem;
+          color: #fff;
+          background-color: #9EA9F0;
+          padding: 0.7rem 0;
+          /* ========= RWD For 1440*900 ========= */
+          @media (max-width: 1440px) {
+            font-size: 0.95rem;
+            padding: 0.7rem 0;
+          }
+          /* ========= RWD For 1024*768 ========= */
+          @media (max-width: 1024px) {
+            font-size: 0.9rem;
+            padding: 0.6rem 0;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media (max-width: 414px) {
+            font-size: 0.75rem;
+            padding: 0.3rem 0;
+            letter-spacing: 0.2rem;
+          }
+        }
+      }
+      .question_area{
+        margin: 1rem auto;
+        background-color: $bg-purple-color;
+        /* ========= RWD For 1024*768 ========= */
+        @media (max-width: 1024px) {
+          margin: 1.4rem auto;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media (max-width: 414px) {
+          margin: 0.5rem auto; 
+        }
+        .txt_area {
+          width: 50%;
+          /* ========= RWD For 1440*900 ========= */
+          @media (max-width: 1440px) {
+            width: 60%;
+          }
+          /* ========= RWD For 1024*768 ========= */
+          @media (max-width: 1024px) {
+            width: 65%;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media (max-width: 414px) {
+            width: 70%;
+          }
+          p{
+            text-align: left;
+            font-size: 0.85rem;
+            line-height: 1.9rem;
+            /* ========= RWD For 1440*900 ========= */
+            @media (max-width: 1440px) {
+              font-size: 0.9rem;
+              line-height: 2rem;
+            }
+            /* ========= RWD For 1024*768 ========= */
+            @media (max-width: 1024px) {
+              font-size: 0.8rem;
+              line-height: 1.45rem;
+            }
+            /* ========= RWD For 414*896 ========= */
+            @media (max-width: 414px) {
+              font-size: 0.7rem;
+              line-height: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ---------- Start Container ---------- */
+  .start_container{
+    width: 58vw;
+    margin-top: 3.5rem;
+    /* ========= RWD For 1440*900 ========= */
+    @media (max-width: 1440px) {
+      width: 70vw;
+    }
+    /* ========= RWD For 1024*768 ========= */
+    @media (max-width: 1024px) {
+      width: 80vw;
+    }
+    /* ========= RWD For 414*896 ========= */
+    @media (max-width: 414px) {
+      margin-top: 1.8rem;
+      width: 80vw;
+    }
+    button{
+      color: #fff;
+      font-size: 1rem;
+      padding: 0.5rem 2rem;
+      border-radius: 3rem;
+      background-color: $purple-color;
+      border: transparent;
+      cursor: pointer;
+
+      /* ========= RWD For 1024*768 ========= */
+      @media (max-width: 1024px) {
+        font-size: 0.85rem;
+        padding: 0.4rem 1.5rem;
+      }
+      /* ========= RWD For 414*896 ========= */
+      @media (max-width: 414px) {
+        font-size: 0.75rem;
+      }
+
+      &:hover {
+        background-color: #9EA9F0;
+        transition: 0.35s ease-out;
+      }
+    }
+    
+    .drawNewCard{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      /* ========= RWD For 1024*768 ========= */
+      @media (max-width: 1024px) {
+        margin-top: 1.6rem;
+      }
+      /* ========= RWD For 414*896 ========= */
+      @media (max-width: 414px) {
+        margin-top: 1.2rem;
+        flex-direction: column;
+      }
+
+      /* beforeDrawnCards */
+      .beforeDrawnCards_area {
+        width: 100%;
+        display: flex;
+        /* ========= RWD For 414*896 ========= */
+        @media (max-width: 414px) {
+          flex-direction: column;
+        }
+        .TimeCard_text_item {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          /* ========= RWD For 414*896 ========= */
+          @media (max-width: 414px) {
+            width: 80%;
+           }
+          p{
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: rgb(105, 105, 105);
+            border-radius: 0.5rem;
+            /* ========= RWD For 1024*768 ========= */
+           @media (max-width: 1024px) {
+              font-size: 0.8rem;
+           }
+            /* ========= RWD For 414*896 ========= */
+            @media (max-width: 414px) {
+              width: 50%;
+              font-size: 0.75rem;
+              margin-top: 0.8rem;
+             }
+          }
+          img {
+            width: 150px;
+            /* ========= RWD For 414*896 ========= */
+            @media (max-width: 414px) {
+              width: 120px;
+            }  
+          }
+        }
+      }
+
+      /* newCard */
+      .newCard_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+        /* ========= RWD For 1024*768 ========= */
+        @media (max-width: 1024px) {
+          width: 30%;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media (max-width: 414px) {
+          width: 90%;
+          margin-bottom: 0.5rem;
+        }
+        h1{
+          font-size: 1.8rem;
+          color: $purple-color;
+          margin-bottom: 1rem;
+          /* ========= RWD For 1440*900 ========= */
+          @media (max-width: 1440px) {
+            font-size: 1.5rem;
+          }
+          /* ========= RWD For 1024*768 ========= */
+          @media (max-width: 1024px) {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media (max-width: 414px) {
+            font-size: 1.1rem;
+          }
+        }
+        h3{
+          width: 82%;
+          font-size: 1.05rem;
+          background-color:rgb(233, 223, 216);
+          padding: 0.5rem;
+          letter-spacing: 0.1rem;
+          border-radius: 2rem;
+          margin-bottom: 0.5rem;
+           /* ========= RWD For 1440*900 ========= */
+           @media (max-width: 1440px) {
+            width: 80%;
+            font-size: 0.9rem;
+            letter-spacing: 0.1rem;
+          }
+          /* ========= RWD For 1024*768 ========= */
+          @media (max-width: 1024px) {
+            width: 82%;
+            font-size: 0.75rem;
+            padding: 0.3rem;
+            letter-spacing: 0.05rem;
+          }
+          /* ========= RWD For 414*896 ========= */
+          @media (max-width: 414px) {
+            width: 60%;
+            font-size: 0.7rem;
+            padding: 0.3rem;
+            margin-bottom: 0.3rem;
+          }
+        }
+        img{
+          width: 150px;
+          /* ========= RWD For 414*896 ========= */
+          @media (max-width: 414px) {
+            width: 120px;
+          }
+        }
+        .explain_area{
+          .positive_area{
+            padding: 0.7rem 0;
+            /* ========= RWD For 1024*768 ========= */
+            @media (max-width: 1024px) {
+              padding: 0.8rem 0;
+            }
+            h4{
+              font-size: 1.1rem;
+              letter-spacing: 0.25rem;
+              color: rgb(180, 164, 152);
+              /* ========= RWD For 1440*900 ========= */
+              @media (max-width: 1440px) {
+                font-size: 0.95rem;
+                letter-spacing: 0.2rem;
+              }
+              /* ========= RWD For 1024*768 ========= */
+              @media (max-width: 1024px) {
+                font-size: 0.95rem;
+              }
+              /* ========= RWD For 414*896 ========= */
+              @media (max-width: 414px) {
+                font-size: 0.85rem;
+                letter-spacing: 0.15rem;
+              }
+            }
+            p{
+              font-size: 1rem;
+              margin-top: 0.2rem;
+              /* ========= RWD For 1440*900 ========= */
+              @media (max-width: 1440px) {
+               font-size: 0.9rem;
+              }
+              /* ========= RWD For 1024*768 ========= */
+              @media (max-width: 1024px) {
+                font-size: 0.85rem;
+                margin-top: 0.1rem;
+              }
+              /* ========= RWD For 414*896 ========= */
+              @media (max-width: 414px) {
+                font-size: 0.75rem;
+              }
+            }
+          }
+          .line {
+            width: 90%;
+            height: 0.5px;
+            background-color: rgb(180, 164, 152);
+          }
+          .negative_area{
+            padding: 0.7rem 0;
+            h4{
+              font-size: 1.1rem;
+              letter-spacing: 0.25rem;
+              color: rgb(180, 164, 152);
+              /* ========= RWD For 1440*900 ========= */
+              @media (max-width: 1440px) {
+                font-size: 0.95rem;
+                letter-spacing: 0.2rem;
+              }
+              /* ========= RWD For 1024*768 ========= */
+              @media (max-width: 1024px) {
+                font-size: 0.95rem;
+              }
+              /* ========= RWD For 414*896 ========= */
+              @media (max-width: 414px) {
+                font-size: 0.85rem;
+                letter-spacing: 0.15rem;
+              }
+            }
+            p{
+              font-size: 1rem;
+              margin-top: 0.2rem;
+              /* ========= RWD For 1440*900 ========= */
+              @media (max-width: 1440px) {
+                font-size: 0.9rem;
+              }
+              /* ========= RWD For 1024*768 ========= */
+              @media (max-width: 1024px) {
+                font-size: 0.85rem;
+                margin-top: 0.1rem;
+              }
+              /* ========= RWD For 414*896 ========= */
+              @media (max-width: 414px) {
+                font-size: 0.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ---------- Add Container ---------- */
+  .additional_container{
+    width: 58vw;
+    margin-top: 3.5rem;
+    margin-bottom: 4.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 0.3rem;
+    /* ========= RWD For 1440*900 ========= */
+    @media (max-width: 1440px) {
+      width: 68vw;
+     }
+     /* ========= RWD For 1024*768 ========= */
+     @media (max-width: 1024px) {
+      width: 80vw;
+      margin-top: 2.5rem;
+      margin-bottom: 2.8rem;
+    }
+    /* ========= RWD For 414*896 ========= */
+    @media (max-width: 414px) {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .additional_area{
+      padding: 2.3rem 1.8rem;
+      display: flex;
+      /* ========= RWD For 1024*768 ========= */
+      @media (max-width: 1024px) {
+        padding: 1.2rem;
+      }
+      /* ========= RWD For 414*896 ========= */
+      @media (max-width: 414px) {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+      h3{
+        color: $purple-color;
+        font-size: 1.25rem;
+        /* ========= RWD For 1440*900 ========= */
+        @media (max-width: 1440px) {
+          font-size: 1.15rem;
+        }
+        /* ========= RWD For 1024*768 ========= */
+        @media (max-width: 1024px) {
+          font-size: 0.95rem;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media (max-width: 414px) {
+          font-size: 0.85rem;
+        }
+      }
+      p{
+        width: 88%;
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 1.5rem;
+        /* ========= RWD For 1440*900 ========= */
+        @media (max-width: 1440px) {
+          font-size: 0.9rem;
+        }
+        /* ========= RWD For 1024*768 ========= */
+        @media (max-width: 1024px) {
+          font-size: 0.8rem;
+        }
+        /* ========= RWD For 414*896 ========= */
+        @media (max-width: 414px) {
+          width: 100%;
+          margin-left: 0;
+          font-size: 0.72rem;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+  }
+}
